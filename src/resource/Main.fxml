@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="700.0" prefWidth="768.0" stylesheets="@styles.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.expensetracker.controller.MainController">
+
+    <!-- Top Section -->
+    <top>
+        <HBox alignment="CENTER" style="-fx-background-color: linear-gradient(to right, #ff0054, #ff6587); -fx-padding: 10;">
+            <Label style="-fx-font-size: 24px; -fx-text-fill: white; -fx-font-weight: bold;" text="Expense Tracker" />
+        </HBox>
+    </top>
+
+    <!-- Center Section -->
+    <center>
+        <HBox alignment="CENTER" spacing="30" style="-fx-padding: 20;">
+            <!-- Left Section: Form -->
+            <VBox alignment="CENTER" spacing="20" style="-fx-padding: 20; -fx-background-color: #ffffff; -fx-border-radius: 10; -fx-border-color: #dcdcdc; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-pref-width: 350px;">
+                <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Add New Expense" />
+                <HBox alignment="CENTER" spacing="10">
+                    <Label style="-fx-font-size: 14px;" text="Expense Name:" />
+                    <TextField fx:id="expenseNameField" promptText="Enter expense name" style="-fx-background-radius: 5; -fx-border-color: #dcdcdc;" />
+                </HBox>
+                <HBox alignment="CENTER" spacing="10">
+                    <Label style="-fx-font-size: 14px;" text="Amount:" />
+                    <TextField fx:id="expenseAmountField" promptText="Enter amount" style="-fx-background-radius: 5; -fx-border-color: #dcdcdc;" />
+                </HBox>
+                <HBox alignment="CENTER" spacing="10">
+                    <Label style="-fx-font-size: 14px;" text="Category:" />
+                    <ComboBox fx:id="categoryComboBox" promptText="Select category" style="-fx-background-radius: 5; -fx-border-color: #dcdcdc;" />
+                </HBox>
+                <Button fx:id="addExpenseButton" onAction="#addExpense" style="-fx-background-color: #ff7300; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Add Expense" />
+            </VBox>
+
+            <!-- Right Section: Expenses List -->
+            <VBox alignment="CENTER" spacing="20" style="-fx-padding: 20; -fx-background-color: #ffffff; -fx-border-radius: 10; -fx-border-color: #dcdcdc; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-pref-width: 350px;">
+                <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Expenses List" />
+                <ListView fx:id="expenseListView" prefHeight="300" style="-fx-border-radius: 5;" />
+            </VBox>
+        </HBox>
+    </center>
+
+    <!-- Bottom Section -->
+    <bottom>
+        <HBox alignment="CENTER" spacing="30" style="-fx-padding: 20;">
+            <!-- Total Expenses -->
+            <VBox alignment="CENTER" spacing="15" style="-fx-padding: 15; -fx-background-color: #ffffff; -fx-border-radius: 10; -fx-border-color: #dcdcdc; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-pref-width: 250px;">
+                <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Total Expenses" />
+                <Label fx:id="totalAmountLabel" style="-fx-font-size: 22px; -fx-text-fill: #ff0054;" text="₹0.00" />
+            </VBox>
+
+            <!-- Expense Distribution -->
+            <VBox alignment="CENTER" spacing="15" style="-fx-padding: 15; -fx-background-color: #ffffff; -fx-border-radius: 10; -fx-border-color: #dcdcdc; -fx-border-width: 1; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0); -fx-pref-width: 250px;">
+                <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Expense Distribution" />
+                <PieChart fx:id="expensePieChart" prefHeight="200" />
+            </VBox>
+        </HBox>
+    </bottom>
+
+</BorderPane>

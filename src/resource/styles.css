@@ -1,0 +1,122 @@
+/* General Layout */
+.main-section {
+    -fx-padding: 20px 50px; /* Add uniform padding for cleaner design */
+}
+
+/* Form Section */
+.form-section {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 20px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.form-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.form-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+}
+
+.form-field {
+    -fx-pref-width: 250px;
+    -fx-padding: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+}
+
+.add-button {
+    -fx-background-color: #ff5722;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* List Section */
+.list-section {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 20px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.list-view {
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Summary Section */
+.summary-section {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.summary-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #555555;
+}
+
+.summary-value {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e91e63;
+}
+
+/* Pie Chart */
+.chart-section {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.chart-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+/* General Layout */
+.main-section {
+    -fx-padding: 20px 50px;
+}
+
+/* Form Section */
+.form-section {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 20px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+/* List Section */
+.list-section {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 20px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+/* Pie Chart */
+.chart-section {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
